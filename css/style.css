@@ -1,0 +1,252 @@
+
+/*=========================== RESET ====================*/
+
+* {margin:0; padding:0; 
+	/*border: 1px solid #AAA;*/
+}
+
+a, img, div, header { display: block; }
+
+body { 
+	line-height: 1.4;
+	font-size: 90%;
+	font-family:Tahoma, verdana, Arial, SansSerif;
+
+	background-color: #0c739f;
+	background-image: url("../img/back.png");
+	background-position:0px -38px;
+	background-repeat: repeat-x;
+}
+
+
+/*====================================== BASE BOXES ======= */
+
+.base{
+	margin: auto;
+	position: relative;
+	width: 1000px; 
+	height: 998px; 
+	/*background-color: #fff;*/
+	background-color: transparent;
+	box-shadow: 0px 5px 7px #257;
+	overflow: hidden;
+}
+
+
+.base-header {
+	position: relative;
+	margin: 0px;
+	height: 175px;
+	background-color: #FFF;
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	background-position:30px 11px;
+	}
+
+.base-pict {
+	margin: 0px;
+	height: 239px;
+	background-color: #128aa7;
+	background-image: url("../img/title.jpg");
+	background-repeat: no-repeat;
+	background-position:0px 1px;
+	}
+
+.base-menu {
+	margin: 0px;
+	height: 30px;
+	background-color:#444;
+	}
+
+.base-content {
+	position: relative;
+	z-index: -1;
+	}
+
+
+/*======================= HEADER ITEMS ===============*/
+
+.head-txt{
+	padding-top:110px;
+	padding-right: 680px;
+	font-size: 80%;
+	text-align: center;
+	font-style: normal;
+	font-weight: normal;
+	color: #128aa7;
+}
+
+.head-txt-contact{
+	position: absolute;
+	top: 18px;
+	right: 35px;
+	font-size: 80%;
+	text-align: left;
+	font-style: normal;
+	font-weight: normal;
+	color: #128aa7;
+}
+
+.block-countries{
+	/*background-color: #669966; */
+	position: absolute;
+	bottom: 8px;
+	right: 35px;
+}
+
+.cntry-ul {
+	display: block;
+	/*background-color: #666;*/
+}
+
+.cntry-li {
+	display: inline-block;
+	margin-right: -4px;
+	position:relative;
+}
+
+.cn-india{ background-image: url("../img/cn-india.png"); }
+.cn-nepal{ background-image: url("../img/cn-nepal.png"); }
+.cn-tibet{ background-image: url("../img/cn-tibet.png"); }
+.cn-butan{ background-image: url("../img/cn-butan.png"); }
+.cn-shri{ background-image: url("../img/cn-shri.png"); }
+.cn-mald{ background-image: url("../img/cn-mald.png"); }
+
+.cntry-a {
+	display: table-cell;
+	vertical-align: bottom;
+	width: 56px;
+	height: 55px;
+
+	text-align: center;
+	font-size: 70%;
+	color: #128aa7;
+
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.cntry-a:hover {
+	color: #20a0c0;
+}
+
+
+/* ======================================= MENU */
+
+ul.menubar {
+	display: block;
+	list-style: none;
+	text-align: center;
+
+	background: -webkit-linear-gradient(#373737, #2d2d2d);
+	background: -o-linear-gradient(#373737, #2d2d2d);
+	background: linear-gradient(#373737, #2d2d2d);
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #111;
+	box-shadow: 0px 2px 4px #333;
+}
+
+ul.menubar > li {
+	display: inline-block;
+	position: relative;
+}
+
+ul.menubar > li > a {
+	display: block;
+	padding: 6px 30px;
+	text-decoration: none;
+	color: #FFF;
+}
+
+ul.menubar > li > a:hover {
+	background-color: #444;
+}
+
+/*=========================== SUBMENU ================ */
+
+ul.submenu {
+	display: none;
+    width: 160px;
+
+	position: absolute;
+    top: 32px;
+    left: 0px;
+
+	list-style: none;
+    border-top: 1px solid #000;
+}
+
+
+ul.submenu.w1{ width: 115px; }
+ul.submenu.w2{ width: 150px; }
+ul.submenu.w3{ width: 104px; }
+ul.submenu.w4{ width: 180px; }
+
+ul.submenu > li {
+    display: block;
+    position: relative;
+}
+
+ul.submenu > li > a {
+    display: block;
+    padding: 8px 0px 8px 16px;
+    color: #ccc;
+    background-color: #333;
+    text-decoration: none;
+    text-align: left;
+}
+
+ul.submenu > li > a:hover {
+    background-color: #444;
+}
+
+ul.menubar > li:hover > ul.submenu {
+    display: block;
+}
+
+/* ================= CONTENTS ==============*/
+
+div.col-1{
+	float:left;
+	width: 210px;
+	padding: 10px;
+	background-color: #edeff0;
+}
+
+div.col-2{
+	display: block;
+	height: 800px;
+	padding: 15px 250px 0px 250px;
+	background-color: #fff;
+}
+
+div.col-3{
+	float:right;
+	width: 210px;
+	padding: 10px;
+	background-color: #edeff0;
+
+}
+
+h3{
+	font-size: 130%;
+	text-align: center;
+	color: #555;
+}
+
+
+/* ======================= ETC =======*/
+
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.txt-copywrt{
+	text-align: center;
+	font-size: 80%;
+	color:#d8e0f0;
+	margin:10px;
+}
+
