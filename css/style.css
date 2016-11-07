@@ -177,10 +177,10 @@ ul.submenu {
 }
 
 
-ul.submenu.w1{ width: 115px; }
-ul.submenu.w2{ width: 150px; }
-ul.submenu.w3{ width: 104px; }
-ul.submenu.w4{ width: 180px; }
+/*ul.submenu.w1{ width: 115px; }*/
+ul.submenu.w2{ width: 168px; }
+ul.submenu.w3{ width: 123px; }
+ul.submenu.w4{ width: 172px; }
 
 ul.submenu > li {
     display: block;
@@ -194,6 +194,7 @@ ul.submenu > li > a {
     background-color: #333;
     text-decoration: none;
     text-align: left;
+    box-shadow: 2px 3px 7px #444;
 }
 
 ul.submenu > li > a:hover {
